@@ -4,12 +4,12 @@
 
         /*=============== REUSABLES ================*/
 
-
+/* Universal operator */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: work-sans,sans-serif;
+    font-family: Montserrat,sans-serif;
 }
 
 html{
@@ -17,12 +17,15 @@ html{
 }
 
 h1,h2,h3,h4 {
+    color: var(--primary-clr);
     font-family: Poppins,sans-serif;
 }
 
 p{
     line-height: 1.6;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--para-clr);
 }
 
 li{
@@ -31,4 +34,63 @@ li{
 
 a{
     text-decoration: none;
+}
+
+:root{
+
+--helper-color:#A4CE95;
+--primary-clr:#124076;
+--para-clr:#39385e;
+--white: #fff;
+
+.img{
+    display: inline-block;
+    width: 100%;
+}
+
+.navbar-link{
+    color: var(--para-clr);
+}
+
+.navbar-link:hover,
+.navbar-link:active{
+    color: var(--helper-color);
+}
+
+
+}
+
+/*========================================== HEADER =========================================== */
+
+.header{
+    background-color: rgb(134, 134, 205);
+    padding: 0 7rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.header .logo{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+
+.navbar-list{
+    display:flex ;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3.3rem;  
+}
+
+.navbar-link{
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+
 }
